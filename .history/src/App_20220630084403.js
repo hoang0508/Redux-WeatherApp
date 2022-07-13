@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
-import ConfigRouter from "../src/config/configRouter";
+import ConfigRouter from "./config/configRouter";
+
 function App() {
   return (
     <>

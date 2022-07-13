@@ -1,6 +1,9 @@
 import React from "react";
+
 import "./App.css";
-import ConfigRouter from "../src/config/configRouter";
+import ConfigRouter from "./configRouter";
+import WeatherApp from "./pages/weatherApp/WeatherApp";
+
 function App() {
   return (
     <>
