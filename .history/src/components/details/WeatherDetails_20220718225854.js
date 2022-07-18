@@ -90,7 +90,7 @@ const WeatherDetails = () => {
             </div>
             <div className="details-info">
               <div className="info-name">Description:</div>
-              {dataDetails?.weather && (
+              {dataDetails?.weather[0] && (
                 <div>{dataDetails?.weather[0]?.description}</div>
               )}
             </div>

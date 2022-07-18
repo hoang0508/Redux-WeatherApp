@@ -30,10 +30,6 @@ const WeatherDetailsStyle = styled.div`
 
 const WeatherDetails = () => {
   const { dataDetails, isLoading } = useSelector((state) => state.weather);
-  console.log(
-    "🚀 ~ file: WeatherDetails.js ~ line 33 ~ WeatherDetails ~ dataDetails",
-    dataDetails
-  );
   return (
     <>
       {isLoading && (
@@ -90,9 +86,7 @@ const WeatherDetails = () => {
             </div>
             <div className="details-info">
               <div className="info-name">Description:</div>
-              {dataDetails?.weather && (
-                <div>{dataDetails?.weather[0]?.description}</div>
-              )}
+              <div>{dataDetails?.weather[0].description}</div>
             </div>
             <div className="details-info">
               <div className="info-name">Pressure:</div>
